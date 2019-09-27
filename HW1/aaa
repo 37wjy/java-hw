@@ -1,0 +1,10 @@
+double towardsThem = distAlong(b.getMoveX(), b.getMoveY(), distX, distY);//位置，移动方向   角度？
+double towardsMe = distAlong(c.getMoveX(), c.getMoveY(), distX, distY);
+ 
+double myOrtho = distAlong(b.getMoveX(), b.getMoveY(), distY, -distX);
+double theirOrtho = distAlong(c.getMoveX(), c.getMoveY(), distY, -distX);
+ 
+b.setMove(towardsMe * distX + myOrtho * distY,
+          towardsMe * distY + myOrtho * -distX);
+c.setMove(towardsThem * distX + theirOrtho * distY,
+          towardsThem * distY + theirOrtho * -distX);

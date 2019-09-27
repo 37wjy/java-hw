@@ -1,0 +1,11 @@
+{
+    "java.dependency.packagePresentation": "hierarchical",
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true,
+        "/Applications/Processing.app/Contents/Java/core/library/core.jar":true
+    },
+    "java.dependency.syncWithFolderExplorer": true
+}

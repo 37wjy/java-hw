@@ -1,0 +1,32 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Body",
+            "request": "launch",
+            "mainClass": "Body.Body",
+            "projectName": "Body"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Vec3d",
+            "request": "launch",
+            "mainClass": "HW3.Vec3d.src.Vec3d",
+            "projectName": "EE552_4c62c2b4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Vec3d",
+            "request": "launch",
+            "mainClass": "HW3.Vec3d",
+            "projectName": "EE552_4c62c2b4"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - p1",
+            "request": "launch",
+            "mainClass": "C3.p1.p1",
+            "projectName": "EE552_4c62c2b4"
+        }
+    ]
+}

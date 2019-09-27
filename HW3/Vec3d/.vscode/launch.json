@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Vec3d",
+            "request": "launch",
+            "mainClass": "Vec3d",
+            "projectName": "Vec3d"
+        }
+    ]
+}
