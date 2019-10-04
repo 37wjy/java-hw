@@ -44,7 +44,7 @@ class Vec3d {
 
 
 class Body {
-    private String name;
+    public String name;
     private double mass;
     private Vec3d x; //position of the body in 3-space
     private double or;
@@ -135,14 +135,19 @@ public class App {
     public static void main(String[] args) throws InterruptedException {
         Solar a=new Solar();
         a.readIn();
-        while(true){
-            TimeUnit.SECONDS.sleep(2);
+        String s="Sun",v="Venus",e="Earth",m="Moon";
+        //while(true){
+          //  TimeUnit.SECONDS.sleep(2);
             for(Body pl:a.Solar.values()){
+                
                 if(pl.f=="NaN")continue;
-                pl.move(a.Solar.get(pl.f).getPose(), spd);
-                System.out.println(pl);
+                if(pl.name.equals(s)||pl.name.equals(v)||pl.name.equals(e)||pl.name.equals(m)){
+                    System.out.println(pl);
+                }
+                //pl.move(a.Solar.get(pl.f).getPose(), spd);
+                
             }        
-        }
+        //}
         
     }
 }
