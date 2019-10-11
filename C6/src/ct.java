@@ -10,6 +10,8 @@ public class ct{
         JTextField text=new JTextField();
         JFrame f=new JFrame();
         Container c=f.getContentPane();
+        f.setDefaultCloseOperation(3);
+        f.setSize(400,400);//最后
         b.addActionListener(new ActionListener(){
         
             @Override
@@ -17,11 +19,8 @@ public class ct{
                 text.setText(text.getText()+"hello");
             }
         });
-
         c.add(text, BorderLayout.NORTH);
         c.add( b,BorderLayout.SOUTH);
-        f.setDefaultCloseOperation(3);
-        f.setSize(400,400);//最后
         f.setVisible(true);
     }
 

@@ -1,0 +1,9 @@
+jframe：有container，可以不用
+        可getcontainer getContentPane()
+
+container: 位置 BorderLayout.
+           add(name,pos)
+    jpanel:
+        buttom/....
+
+    jtextfile
