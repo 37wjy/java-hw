@@ -1,4 +1,5 @@
 import java.awt.BorderLayout;
+import java.awt.Color;
 import java.awt.Component;
 import java.awt.Container;
 import java.awt.Graphics;
@@ -12,6 +13,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextField;
 import javax.swing.border.Border;
 
+
 /**
  * draw
  */
@@ -19,12 +21,20 @@ public class draw {
 
     public static void main(String[] args) {
         JFrame iframe=new JFrame();
-        Container iContainer=iframe.getContentPane();//注意！
-        JPanel iPanel=new JPanel();
+        Container iContainer=iframe.getContentPane();//
+        JPanel iPanel=new JPanel(){
+            @Override
+            public void paint(Graphics g) {
+                g.fillRect(10, 10, 200, 200);
+                super.paint(g);
+            }
+        };
         JButton iButton=new JButton("b1");
         JTextField iTextArea = new JTextField();
         iframe.setSize(400,400);
         iframe.setDefaultCloseOperation(3);
+
+        iPanel.setBackground(Color.BLACK);
 
         iButton.addActionListener(new ActionListener(){
             int i=0;
@@ -34,7 +44,6 @@ public class draw {
                 iTextArea.setText(String.valueOf(i++));
             }
         });
-
 
         for (int i = 0; i < 2; i++) {
             JButton jb=new JButton("xx");

@@ -61,6 +61,18 @@ public class App extends JFrame{
             }
             gg=(Graphics2D)呵.getGraphics();
         }
+
+        @Override
+        public void mouseClicked(MouseEvent e) {
+            // TODO Auto-generated method stub
+            super.mouseClicked(e);
+        }
+
+        @Override
+        public void mouseDragged(MouseEvent e) {
+            // TODO Auto-generated method stub
+            super.mouseDragged(e);
+        }
     
         public void mouseReleased(MouseEvent 咔){
             int mx=咔.getX();
