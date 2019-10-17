@@ -10,12 +10,5 @@
             "request": "launch",
             "mainClass": "${file}"
         },
-        {
-            "type": "java",
-            "name": "Debug (Launch)-ct<C6>",
-            "request": "launch",
-            "mainClass": "ct",
-            "projectName": "C6"
-        }
     ]
 }
