@@ -58,11 +58,10 @@ public class draw {
             iPanel.add(jb);
         }
         
-        iContainer.add(iPanel,BorderLayout.SOUTH);
+        iContainer.add(iPanel , BorderLayout.SOUTH );
         iContainer.add(iButton, BorderLayout.CENTER);
         iContainer.add(iTextArea, BorderLayout.NORTH);
         
-
         iframe.setVisible(true);
     }
 }
